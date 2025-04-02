@@ -3,7 +3,6 @@ const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 // gender select
-if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
     const radioBtn1 = document.getElementById('flexRadioDefault1');
     const radioBtn2 = document.getElementById('flexRadioDefault2');
     const radioBtn3 = document.getElementById('flexRadioDefault3');
@@ -18,4 +17,3 @@ if (window.location.pathname === '/' || window.location.pathname === '/index.htm
     radioBtn3.addEventListener("change",() => {
         genderSelect.classList.remove('d-none');
     });
-}
